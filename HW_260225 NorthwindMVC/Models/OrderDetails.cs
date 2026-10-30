@@ -5,7 +5,7 @@ using System.Web;
 
 namespace HW_260225_NorthwindMVC.Models
 {
-    public class OrderDetails
+    public class OrderDetail
     {
         public int OrderId { get; set; }
         public int ProductId { get; set; }

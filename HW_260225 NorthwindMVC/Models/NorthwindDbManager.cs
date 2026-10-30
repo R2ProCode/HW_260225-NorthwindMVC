@@ -40,7 +40,7 @@ namespace HW_260225_NorthwindMVC.Models
             return orders;
         }
 
-        public List<OrderDetails> GetOrderDetails()
+        public List<OrderDetail> GetOrderDetails()
         {
             SqlConnection connection = new SqlConnection(_connectionString);
             SqlCommand command = connection.CreateCommand();
@@ -52,11 +52,11 @@ namespace HW_260225_NorthwindMVC.Models
 
             connection.Open();
 
-            List<OrderDetails> orderDetails = new List<OrderDetails>();
+            List<OrderDetail> orderDetails = new List<OrderDetail>();
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                orderDetails.Add(new OrderDetails
+                orderDetails.Add(new OrderDetail
                 {
                     OrderId = (int)reader["OrderID"],
                     ProductId = (int)reader["ProductID"],

@@ -4,8 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using HW_260225_NorthwindMVC.Models;
-using HW_260225_NorthwindMVC.Properties;
-
 namespace HW_260225_NorthwindMVC.Controllers
 {
     public class NorthwindController : Controller
